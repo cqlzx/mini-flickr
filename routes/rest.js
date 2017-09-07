@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var flickrService = require('../services/flickrService');
+var flickrService = require('../service/flickrService');
 
 router.get('/photos', function (req, res) {
     var ip = req.headers['x-forwarded-for'] ||

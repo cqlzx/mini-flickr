@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var flickrService = require('./services/flickrService');
+var flickrService = require('./service/flickrService');
 flickrService.getRecentFlickrPhotos(function () {
     var restRouter = require('./routes/rest');
 

@@ -1,6 +1,8 @@
-var app = angular.module("miniFlickr", []);
+var app = angular.module("miniFlickr", ['akoenig.deckgrid']);
 
-app.controller("photoController", ["$http", function ($http) {
-    // $http.get().
-    // then();
-}]);
+app.controller("photoController", function ($http, $scope) {
+    $http.get('/api/v1/photos')
+        .then(function (response) {
+            $scope.photos = response.data;
+        })
+});
