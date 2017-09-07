@@ -1,0 +1,14 @@
+{
+  "name": "mini-flcikr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "long",
+  "dependencies": {
+    "express": "^4.14.0",
+    "flickrapi": "^0.6.0"
+  }
+}
