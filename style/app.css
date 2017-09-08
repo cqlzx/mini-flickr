@@ -16,30 +16,30 @@ img {
     width: 100%;
 }
 
-/*.pin-button-group{*/
-    /*margin: 50px 0 0 0;*/
-    /*float: right*/
-/*}*/
+.pin-button-group{
+    margin: 50px 0 0 0;
+    float: right
+}
 
-/*.pin-button {*/
-    /*width: 77px;*/
-/*}*/
+.pin-button {
+    width: 77px;
+}
 
-/*.search-input-group {*/
-    /*margin: -10px 0 0 0;*/
-/*}*/
+.search-input-group {
+    margin: -10px 0 0 0;
+}
 
-/*.search-input-group .search-addon {*/
-    /*background: none;*/
-    /*padding: 0;*/
-    /*border: 0;*/
-/*}*/
+.search-input-group .search-addon {
+    background: none;
+    padding: 0;
+    border: 0;
+}
 
-/*.search-input-group .search-button {*/
-    /*border-left: 0;*/
-    /*border-top-left-radius: 0;*/
-    /*border-bottom-left-radius: 0;*/
-/*}*/
+.search-input-group .search-button {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
 .a-card {
     height: auto;
