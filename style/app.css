@@ -16,37 +16,37 @@ img {
     width: 100%;
 }
 
-.pin-button-group{
-    margin: 50px 0 0 0;
-    float: right
-}
+/*.pin-button-group{*/
+    /*margin: 50px 0 0 0;*/
+    /*float: right*/
+/*}*/
 
-.pin-button {
-    width: 77px;
-}
+/*.pin-button {*/
+    /*width: 77px;*/
+/*}*/
 
-.search-input-group {
-    margin: -10px 0 0 0;
-}
+/*.search-input-group {*/
+    /*margin: -10px 0 0 0;*/
+/*}*/
 
-.search-input-group .search-addon {
-    background: none;
-    padding: 0;
-    border: 0;
-}
+/*.search-input-group .search-addon {*/
+    /*background: none;*/
+    /*padding: 0;*/
+    /*border: 0;*/
+/*}*/
 
-.search-input-group .search-button {
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
+/*.search-input-group .search-button {*/
+    /*border-left: 0;*/
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
+/*}*/
 
 .a-card {
     height: auto;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 3px;
     margin: 0 10px 10px 0;
-    /*box-shadow: -2px 3px 3px #E8E8E8;*/
+    box-shadow: -2px 3px 3px #E8E8E8;
 }
 
 .a-card-tags {
@@ -70,6 +70,8 @@ img {
 .a-card-pin-icon:hover {
     opacity: 1;
 }
+
+
 
 .deckgrid{
     padding: 10px 0 10px 10px;
@@ -95,10 +97,26 @@ img {
     width: 25%;
 }
 
+.deckgrid .column-1-5 {
+    width: 20%;
+}
+
 .deckgrid[deckgrid]::before {
-    content: '4 .column.column-1-4';
+    content: '5 .column.column-1-5';
     font-size: 0;
     visibility: hidden;
+}
+
+@media screen and (max-width: 5000px) {
+    .deckgrid[deckgrid]::before {
+        content: '5 .column.column-1-5';
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .deckgrid[deckgrid]::before {
+        content: '4 .column.column-1-4';
+    }
 }
 
 @media screen and (max-width: 960px) {

@@ -1,11 +1,11 @@
 var flickrApi = require('flickrapi');
 var flickrOptions = {
-    api_key: ""
+    api_key: "63c191e6e7239a16f7c4e727d1879994"
 };
 
 var recentPhotos = [];
 var photoCount = 100;
-var searchTag = 'mountain';
+var searchTag = 'landscape';
 
 function getRecentFlickrPhotos(callback) {
     flickrApi.tokenOnly(flickrOptions, function (err, flickr) {

@@ -5,4 +5,9 @@ app.controller("photoController", function ($http, $scope) {
         .then(function (response) {
             $scope.photos = response.data;
         })
+
+    $scope.togglePin = function (pinIndex) {
+        console.log(pinIndex);
+        $scope.photos[pinIndex].pinned = !$scope.photos[pinIndex].pinned;
+    }
 });

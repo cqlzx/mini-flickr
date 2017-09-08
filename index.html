@@ -9,8 +9,9 @@
 
     <script src="script/app.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="style/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/app.css">
+
 
 </head>
 <body ng-app="miniFlickr" ng-controller="photoController">
@@ -25,11 +26,25 @@
 
         <div class="row">
             <div deckgrid class="deckgrid" source="photos">
-                <div class="a-card">
-                    <h1>{{card.title}}</h1>
+                <div class="a-card" ng-mouseover="hoverPin = true" ng-mouseleave="hoverPin = false">
 
-                    <img src="" data-ng-src="{{card.src}}">
+                    <a ng-href="{{card.link}}" target="_blank">
+                        <img ng-src="{{card.src}}">
+                    </a>
+
+                    <h3>{{card.title}}</h3>
+
+                    <div class="a-card-tags">
+                        Tags: {{card.tags}}
+                    </div>
+
+                    <div class="a-card-pin" >
+                        <img class="a-card-pin-icon" src="image/pushpin-64.png"
+                             ng-show="hoverPin || card.pinned" ng-click="mother.togglePin(card.originalIndex)">
+                    </div>
+
                 </div>
+                </a>
             </div>
         </div>
     </div>
